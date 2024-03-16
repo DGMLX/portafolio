@@ -2,8 +2,10 @@
 const HomePage = () =>{
     return(
         <>
-            <h1 className="">HomePage</h1>
-            <img src="../../public/html.webp"/>
+            <main className="bg-gradient-to-r from-cyan-600 via-blue-400  to-blue-500 h-screen">
+                <div className="h-4 shadow-xl shadow-white"></div>
+            
+            </main>
         </>
 
     )
