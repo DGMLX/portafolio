@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+.height108{
+    height: 108px;
+}
