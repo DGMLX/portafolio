@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import certificaciones from "../data/certificaciones";
 
@@ -25,8 +26,8 @@ const CertificacionesPage = () =>{
                                     <p>{`${certificado.descripcion.substring(0,150)}..........`}</p>
                                 </div>
                                 <div className="flex justify-evenly mt-5 ">
-                                    <button  className="border-l-2 border-y-1 border-b-2  border-blue-500 shadow-md rounded-full w-1/2 py-2 mr-2 bg-opacity-10 bg-white text-white font-xl">Ver certificado</button>
-                                    <button className="border-l-2 border-y-1 border-b-2  border-blue-500 shadow-md rounded-full w-1/2 py-2 mr-2 bg-opacity-10 bg-white text-white font-xl">Leer más</button>
+                                    <button  className="border-l-2 text-center border-y-1 border-b-2  border-blue-500 shadow-md rounded-full w-1/2 py-2 mr-2 z-10 bg-blue-600 text-white font-xl ">Ver certificado</button>
+                                    <Link component={<button/>}  to={`/certificaciones/${certificado.id}`} className="border-l-2 border-y-1 border-b-2  border-slate-300 shadow-md rounded-full w-1/2 py-2 mr-2 bg-white text-blue-800 font-xl text-center ">Leer más</Link>
                                 </div>
                             </div>
                         ))

@@ -15,7 +15,7 @@ const AppRouter = () =>{
             <Route path="/proyectos" element={<ProyectosPage/>}/>
             <Route path="/proyectos/:id" element={<ProyectoPage/>}/>
             <Route path="/certificaciones" element={<CertificacionesPage/>}/>
-            <Route path="/certificaciones/:1" element={<CertificadoPage/>}/>
+            <Route path="/certificaciones/:id" element={<CertificadoPage/>}/>
             <Route path="/contacto" element={<ContactoPage/>}/>
         </Routes>
     )

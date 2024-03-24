@@ -51,7 +51,7 @@ const ProyectosPage = () =>{
                    
                    {
                     proyectos.map(proyecto=>(
-                        <div className="w-1/4 m-10 bg-slate-100 border-l-2 border-y-1 border-b-2   border-blue-500 z-0  rounded-xl flex flex-col justify-around shadow-xl  shadow-cyan-800 p-5 h-screen" key={proyecto.id}>
+                        <div className="sm:w-1/2 lg:w-1/4 m-10 bg-white border-l-2 border-y-1 border-b-2   border-blue-500 z-0  rounded-xl flex flex-col justify-around shadow-xl  shadow-cyan-800 p-5 h-screen" key={proyecto.id}>
                             <div className="rounded-xl h-1/3 flex justify-center">
                                 <img className="object-fill shadow-md shadow-slate-400 h-full rounded-lg" src={proyecto.id===1 ? proyecto.imgPortada[selectedAridos] : proyecto.id===2 ? proyecto.imgPortada[selectedIzajes] : proyecto.imgPortada[selectedTareas]} alt={proyecto.titulo} />
                             </div>
@@ -67,7 +67,7 @@ const ProyectosPage = () =>{
                                 .</p>
                                     <div className="flex justify-around mt-10">
                                         <Link to={proyecto.urlProyecto} target="_blank" component={<button/>} className="border-l-2 text-center border-y-1 border-b-2  border-blue-500 shadow-md rounded-full w-1/2 py-2 mr-2 z-10 bg-blue-600 text-white font-xl ">Visitar</Link>
-                                        <button className="border-l-2 border-y-1 border-b-2  border-slate-300 shadow-md rounded-full w-1/2 py-2 mr-2 bg-opacity-10 bg-white text-blue-800 font-xl ">Más información</button>
+                                        <Link to={`/proyectos/${proyecto.id}`} component={<button/>} className="border-l-2 border-y-1 border-b-2  border-slate-300 shadow-md rounded-full w-1/2 py-2 mr-2 bg-white text-blue-800 font-xl text-center ">Más información</Link>
                                     </div>
                             </div>
                         </div>
