@@ -6,7 +6,7 @@ const ProyectoPage = () =>{
     const {id} = useParams()
 
     const proyect = proyectos.filter(proyecto=>proyecto.id===Number(id))
-    console.log(proyect[0])
+    //proyect[0]
     return(
         <>
             <main className="bg-gradient-to-r from-cyan-600 via-blue-400  to-blue-500 h-screen">
